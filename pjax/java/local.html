@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        本地部署 - Admui 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架">
+    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <meta name="msapplication-TileImage" content="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <meta name="msapplication-TileColor" content="#395b81">
+    <link rel="apple-touch-icon-precomposed" href="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <link rel="shortcut icon" href="http://cdn.admui.com/site/img/app/favicon.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "java"
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="http://cdn.admui.com/docs/v2/css/page.css">
+</head>
+
+<body>
+    <div id="mobile-bar">
+        <a class="menu-button"></a>
+        <a class="logo" href="../index.html">Admui开发文档</a>
+        <select class="version-select">
+            <option value="basic">基础版</option>
+            <option value="pjax" selected>pjax版</option>
+            <option value="iframe">iframe版</option>
+        </select>
+    </div>
+    <div id="header">
+    <a id="logo" href="../index.html">
+        <img src="http://cdn.admui.com/docs/images/logo.svg"> <span>Admui 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+        <option value="iframe">iframe版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+<li>
+    <a href="../1.x/index.html" class="nav-link">v1版本</a>
+</li>
+
+    </ul>
+</div>
+    
+    <div id="main" class="fix-sidebar">
+        
+        
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+<li>
+    <a href="../1.x/index.html" class="nav-link">v1版本</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="../../basic/java/index.html" class="sidebar-link ">概述</a>
+            </li>
+            
+            <li>
+                <a href="../../basic/java/local.html" class="sidebar-link current ">本地部署</a>
+            </li>
+            
+            <li>
+                <a href="../../basic/java/function.html" class="sidebar-link ">功能介绍</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content java with-sidebar">
+    <h1>本地部署</h1>
+    <p>在此章节，我们将介绍如何将Admui导入到本地开发工具，并正常运行。</p>
+<h2 id="新建项目"><a href="#%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE" class="headerlink" title="新建项目"></a>新建项目</h2><p>首先，您需要新建一个支持MAVEN的WEB项目，然后将源码中的<code>admui-web</code>、<code>admui-sys</code>、<code>admui-core</code>下的所有文件夹和 <code>pom.xml</code>，<code>README.md</code>分别拷贝到我们新建的项目下,然后运行<code>maven update</code>下载 jar 包，项目没有报错，说明项目导入成功。</p>
+<h2 id="初始化数据库"><a href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93" class="headerlink" title="初始化数据库"></a>初始化数据库</h2><p>以 Navcat 为例，在您的 MySQL 数据库中新建一个数据库(如admui)，然后选择数据库右键点击运行 SQL 文件菜单，在弹出的对话框中选择工程项目 database 下的<code>admui.sql</code>脚本文件，然后点击“开始”按钮，当出现<code>[Msg] Finished - *** queries executed successfully</code>的字样，说明导入成功。</p>
+<blockquote>
+<p>Notes：请牢记您数据库的用户名和密码。</p>
+</blockquote>
+<h2 id="修改项目配置文件"><a href="#%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="headerlink" title="修改项目配置文件"></a>修改项目配置文件</h2><p>打开<code>admui-web</code>下的<code>/src/main/resources/application.properties</code>配置文件，修改以下数据库信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">spring.datasource.url=jdbc:mysql://localhost:3306/admui-v2?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</span><br><span class="line">spring.datasource.username=root</span><br><span class="line">spring.datasource.password=123456</span><br></pre></td></tr></table></figure>
+<h2 id="应用服务器部署"><a href="#%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2" class="headerlink" title="应用服务器部署"></a>应用服务器部署</h2><p>因为工程使用的 Spring Boot 内置的 Tomcat，所以启动项目只需直接找到<code>admui-web</code>下的<code>Application.java</code>文件直接右键点击<code>Run as Jave Application</code>菜单即可，服务端口可以修改<code>application.properties</code>的<code>server.port</code>属性，默认为<code>9090</code></p>
+<p>将项目部署到WEB应用服务器（如：Tomcat），启动并访问；默认的用户密码为 admin / 123456</p>
+<h2 id="Mybatis-代码生成器配置"><a href="#Mybatis-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%E9%85%8D%E7%BD%AE" class="headerlink" title="Mybatis 代码生成器配置"></a>Mybatis 代码生成器配置</h2><p>工程集成了 Mybatis Generator，可以根据库表自动生成 Mybatis 的 Model，Mapper 和 mapping.xml 文件，首先修改<code>generatorConfig.xml</code>中的数据库链接，然后参考下面的表生成配置将要生成配置文件的表配置到配置文件中，然后在 admui-web 工程下<code>src/test/java</code>下找到<code>GenerateCodeMain.java</code>运行<code>Run as Java Application</code>操作，然后在配置的目标目录下寻找是否生成了相应的 Model，Mapper 和 mapping.xml 文件，然后将文件拷贝到对应的目录下修改包名。</p>
+<h2 id="定时器配置"><a href="#%E5%AE%9A%E6%97%B6%E5%99%A8%E9%85%8D%E7%BD%AE" class="headerlink" title="定时器配置"></a>定时器配置</h2><p>找到<code>admui-web</code>下的<code>com.ermei.admui.quartz</code>下的 TaskSchedule 文件，代码提供了两种配置调度器的方式，开发人员可以根据业务需要在调度器下实现自己的业务逻辑。</p>
+<h2 id="POI导出"><a href="#POI%E5%AF%BC%E5%87%BA" class="headerlink" title="POI导出"></a>POI导出</h2><p>项目提供了公共 POI 导出接口，在 admui-web 工程目录下的 controller 包下找到 ExcelController 文件，开发人员可以将要导出的表头和数据传入，即可导出 Excel 文件，具体逻辑请根据实际需求实现。代码中只提供了导出样例。</p>
+
+    
+    <div class="page-links">
+        
+        <span><a href="index.html">&lang; 上一页：概述</a></span>
+        
+        
+        <span style="float:right"><a href="function.html">下一页：功能介绍 &rang;</a></span>
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2018
+    <a href="http://www.admui.com/">Admui</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+        
+    </div>
+    
+
+    <script src="https://cdn.staticfile.org/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+    <script src="http://cdn.admui.com/docs/common/js/common.js"></script>
+
+    <script src="https://cdn.staticfile.org/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+        }, false);
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+</body>
+
+</html>

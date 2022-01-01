@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>JS 模块 - Admui 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架">
+    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <meta name="msapplication-TileImage" content="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <meta name="msapplication-TileColor" content="#395b81">
+    <link rel="apple-touch-icon-precomposed" href="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <link rel="shortcut icon" href="http://cdn.admui.com/site/img/app/favicon.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "ui"
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="http://cdn.admui.com/docs/v1/css/page.css">
+</head>
+<body>
+<div id="mobile-bar">
+    <a class="menu-button"></a>
+    <a class="logo" href="../../index.html">Admui开发文档</a>
+    <select class="version-select">
+        <option value="basic" selected>基础版</option>
+        <option value="pjax">pjax版</option>
+        <option value="iframe">iframe版</option>
+    </select>
+</div>
+<div id="header">
+    <a id="logo" href="../../index.html">
+        <img src="http://cdn.admui.com/docs/common/images/logo.svg"> <span>Admui 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic/1.x" selected>基础版</option>
+        <option value="pjax/1.x">pjax版</option>
+        <option value="iframe/1.x">iframe版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+<li>
+    <a href="../../index.html" class="nav-link">v2版本</a>
+</li>
+
+    </ul>
+</div>
+
+<div id="main" class="fix-sidebar">
+    
+    
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">UI</a>
+</li>
+<li>
+    <a href="../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+<li>
+    <a href="../../index.html" class="nav-link">v2版本</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="index.html" class="sidebar-link ">基本概述</a>
+            </li>
+            
+            <li>
+                <a href="themes.html" class="sidebar-link ">主题说明</a>
+            </li>
+            
+            <li>
+                <a href="build.html" class="sidebar-link ">构建工具</a>
+            </li>
+            
+            <li>
+                <a href="files.html" class="sidebar-link ">入口文件</a>
+            </li>
+            
+            <li>
+                <a href="structure.html" class="sidebar-link ">模板结构</a>
+            </li>
+            
+            <li>
+                <a href="hello-world.html" class="sidebar-link ">Hello world</a>
+            </li>
+            
+            <li>
+                <a href="style.html" class="sidebar-link ">自定义样式</a>
+            </li>
+            
+            <li>
+                <a href="javascript.html" class="sidebar-link current ">JS 模块</a>
+            </li>
+            
+            <li>
+                <a href="components.html" class="sidebar-link ">UI 组件</a>
+            </li>
+            
+            <li>
+                <a href="plugins.html" class="sidebar-link ">第三方插件</a>
+            </li>
+            
+            <li>
+                <a href="icons.html" class="sidebar-link ">字体图标</a>
+            </li>
+            
+            <li>
+                <a href="code-guide.html" class="sidebar-link ">编码规范</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content ui with-sidebar">
+    <h1>JS 模块</h1>
+    <h2 id="主题结构"><a href="#%E4%B8%BB%E9%A2%98%E7%BB%93%E6%9E%84" class="headerlink" title="主题结构"></a>主题结构</h2><p>Admui 具有高度模块化的 JavaScript。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/src/themes/(主题名)/(布局名)/js/</span><br><span class="line">    └── site.js (布局模块&amp;初始化函数)</span><br><span class="line"></span><br><span class="line">/src/themes/(主题名)/global/js/</span><br><span class="line">    ├── components/ (源文件)</span><br><span class="line">    ├── configs/ (基本配置信息)</span><br><span class="line">    ├── plugins/ (插件)</span><br><span class="line">    └── components.js (组件，通过components文件夹组合而成)</span><br></pre></td></tr></table></figure>
+<h2 id="网站初始化"><a href="#%E7%BD%91%E7%AB%99%E5%88%9D%E5%A7%8B%E5%8C%96" class="headerlink" title="网站初始化"></a>网站初始化</h2><p>使用 <code>$.site</code> 对象来设置主题功能；如：菜单栏，栅格菜单，工具条，工具提示和组件等。</p>
+<p>在 <code>/src/themes/(主题名)/(布局名)/js/site.js</code> 文件中我们对网站进行了初始化操作，您不需要再重新进行初始化操作。在该文件中也提供了 <code>$.app</code> 对象，设置一些公用的方法，以便在各个页面中调用。</p>
+<h2 id="全局配置"><a href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE" class="headerlink" title="全局配置"></a>全局配置</h2><p>使用<code>$.configs</code> 对象可以配置一些常用变量在其他地方使用。</p>
+<p><code>$.configs.set(name, options)</code>配置变量，代码如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.configs.set(<span class="string">'site'</span>, &#123;</span><br><span class="line">    fontFamily: <span class="string">"Noto Sans, sans-serif"</span>,</span><br><span class="line">    ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><code>$.configs.get(name[, options.name])</code> 获取变量，代码如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> fontFamily = $.configs.get(<span class="string">'site'</span>, <span class="string">'fontFamily'</span>);</span><br><span class="line"><span class="built_in">console</span>.info(fontFamily); <span class="comment">// 输出：'Noto Sans, sans-serif'</span></span><br></pre></td></tr></table></figure>
+<p><code>$.configs.extend(name[, options])</code> 扩展变量对象，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var font = $.configs.extend(&apos;site&apos;,&#123;</span><br><span class="line">    fontSize: &apos;18px&apos;,</span><br><span class="line">    color: &apos;#f60&apos;,</span><br><span class="line">    ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>我们也在 <code>global/configs/site-configs.js</code> 文件中通过 <code>$.configs.colors = {&quot;red&quot;: {&quot;100&quot;: &quot;#ffeaea&quot;}}</code> 配置了一些颜色信息，可以通过 <code>$.color(name[,level])</code> 方法使用。如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> color = $.color(<span class="string">'red'</span>, <span class="number">100</span>);</span><br><span class="line"><span class="built_in">console</span>.info(color); <span class="comment">// 输出：'#ffeaea'</span></span><br></pre></td></tr></table></figure>
+<h2 id="组件注册"><a href="#%E7%BB%84%E4%BB%B6%E6%B3%A8%E5%86%8C" class="headerlink" title="组件注册"></a>组件注册</h2><p>使用<code>$.components</code> 对象可以进行组件注册，您可以合理的组织您使用到的第三方插件。</p>
+<h3 id="注册"><a href="#%E6%B3%A8%E5%86%8C" class="headerlink" title="注册"></a>注册</h3><blockquote>
+<p>用法： <code>$.components.register(name, {object})</code></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.components.register(name, &#123;</span><br><span class="line">    mode: <span class="string">'init'</span>,</span><br><span class="line">    defauts:&#123;&#125;,</span><br><span class="line">    init: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">// doSomething();</span></span><br><span class="line">    &#125;,</span><br><span class="line">    api: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="comment">// doSomethsing();</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="参数："><a href="#%E5%8F%82%E6%95%B0%EF%BC%9A" class="headerlink" title="参数："></a>参数：</h3><p><code>name</code> 组件名称</p>
+<p><code>{object}</code> 参数</p>
+<ul>
+<li><code>mode</code>: 组件注册的模式。有以下三种：<ul>
+<li><code>default</code>: 使用在 <code>global/js/core.js</code> 中定义的默认初始化函数。</li>
+<li><code>api</code>: 在 <code>document</code> 中新加入元素时，不需要重新初始化的组件方法定义为 <code>api</code> 方法。</li>
+<li><code>init</code>: 在 <code>document</code> 中新加入元素时，需要重新初始化的组件方法定义为 <code>init</code> 方法。</li>
+</ul>
+</li>
+<li><code>defaults</code>: 组件需要的参数。</li>
+<li><code>init | api</code>: 组件的初始化方法。</li>
+</ul>
+<h4 id="raty-组件-注册示例："><a href="#raty-%E7%BB%84%E4%BB%B6-%E6%B3%A8%E5%86%8C%E7%A4%BA%E4%BE%8B%EF%BC%9A" class="headerlink" title="raty 组件 注册示例："></a><code>raty 组件</code> 注册示例：</h4><ul>
+<li>您需要在<code>/src/themes/global/components/</code>中增加该组件。并且，在<code>/build/configuration/config.json</code>中的<code>components</code>对象中添加属性，便于gulp构建。如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;components&quot;: &#123;</span><br><span class="line">    &quot;raty&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果您是build后用于生产环境的版本可直接加入到<code>/public/themes/global/components/</code>中和<code>/public/themes/global/compontents.js</code>中。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.components.register(<span class="string">"rating"</span>, &#123;</span><br><span class="line">    mode: <span class="string">"init"</span>,</span><br><span class="line">    defaults: &#123;</span><br><span class="line">        targetKeep: <span class="literal">true</span>,</span><br><span class="line">        icon: <span class="string">"font"</span>,</span><br><span class="line">        starType: <span class="string">"i"</span>,</span><br><span class="line">        starOff: <span class="string">"icon wb-star"</span>,</span><br><span class="line">        starOn: <span class="string">"icon wb-star orange-600"</span>,</span><br><span class="line">        cancelOff: <span class="string">"icon wb-minus-circle"</span>,</span><br><span class="line">        cancelOn: <span class="string">"icon wb-minus-circle orange-600"</span>,</span><br><span class="line">        starHalf: <span class="string">"icon wb-star-half orange-500"</span>,</span><br><span class="line">        cancelHint: <span class="string">'取消评分'</span>,</span><br><span class="line">        hints: [<span class="string">'很差'</span>, <span class="string">'差'</span>, <span class="string">'一般'</span>, <span class="string">'好'</span>, <span class="string">'非常好'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    init: <span class="function"><span class="keyword">function</span> (<span class="params">context</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!$.fn.raty) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> defaults = <span class="keyword">this</span>.defaults;</span><br><span class="line"></span><br><span class="line">        $(<span class="string">'[data-plugin="rating"]'</span>, context).each(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> $<span class="keyword">this</span> = $(<span class="keyword">this</span>),</span><br><span class="line">                options = $.extend(<span class="literal">true</span>, &#123;&#125;, defaults, $<span class="keyword">this</span>.data());</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (options.hints) options.hints = options.hints.split(<span class="string">','</span>);</span><br><span class="line"></span><br><span class="line">            $<span class="keyword">this</span>.raty(options);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="调用方式"><a href="#%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F" class="headerlink" title="调用方式"></a>调用方式</h3><h4 id="Data-API方式-data-plugin-quot-plugin-name-quot"><a href="#Data-API%E6%96%B9%E5%BC%8F-data-plugin-quot-plugin-name-quot" class="headerlink" title="Data API方式 data-plugin=&quot;{plugin name}&quot;"></a>Data API方式 <code>data-plugin=&quot;{plugin name}&quot;</code></h4><p>同BootStrap的Data API语法一样，在元素上添加 <code>data-plugin=&quot;{plugin name}&quot;</code> 和 <code>[data-{options}]</code> ，组件就会被初始化。</p>
+<p>如下（页面加载完成后，评分插件就可以正常运行了。）：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 引用插件相关文件</span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"assets/vendor/raty/jquery.raty.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"assets/vendor/raty/jquery.raty.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// 引用组件注册文件</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"assets/js/components/raty.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// 使用组件的DOM节点</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rating"</span> <span class="attr">data-score</span>=<span class="string">"4"</span> <span class="attr">data-plugin</span>=<span class="string">"rating"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="手动调用-components-init-ref-name-context"><a href="#%E6%89%8B%E5%8A%A8%E8%B0%83%E7%94%A8-components-init-ref-name-context" class="headerlink" title="手动调用 $.components.init(ref[,name][,context])"></a>手动调用 <code>$.components.init(ref[,name][,context])</code></h4><ul>
+<li>参数：</li>
+</ul>
+<p><code>ref (Boolean)</code>: 如果是 <code>true</code> ，则初始化 <code>init &amp;&amp; api</code> 方法；如果是 <code>false</code> ，只会运行 <code>init</code> 方法。<br><code>name</code>: 组件名称。<br><code>context</code>: 作为待查找的 DOM 元素集、文档或 jQuery 对象。</p>
+<ul>
+<li>用法：</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.components.init(<span class="string">'rating'</span>);</span><br></pre></td></tr></table></figure>
+<p>我们也可以通过上下文指定该组件的第二个参数。当我们通过ajax加载DOM这将会非常有用：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$.components.init(<span class="string">'rating'</span>, <span class="string">'#admui-pageContent'</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>详细：</li>
+</ul>
+<p>在<code>document</code> 中新加入元素时，使用手动调用方式。</p>
+<ul>
+<li>注意：</li>
+</ul>
+<p>如果您需要在整个项目中使用手动调用方式，则需要删除 <code>(layout)/js/site.js</code> 中关于 <code>$.components</code> 的调用。</p>
+<h3 id="默认配置"><a href="#%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE" class="headerlink" title="默认配置"></a>默认配置</h3><p>我们在组件注册时定义了配置选项对象，您可以根据具体的使用情况修改它。当您不使用我们的组件方案，又希望使用我们定义的配置选项时，可以通过如下方法获取配置：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> defaults = $.components.getDefaults(<span class="string">'&#123;compontentName&#125;'</span>);</span><br></pre></td></tr></table></figure>
+<p>如果您也需要加入自己的配置项，可以使用 <code>$.po(name[,object])</code> 方法：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> defaults = $.po(<span class="string">'&#123;componentName&#125;'</span>, &#123;</span><br><span class="line">    name: <span class="string">'Admui'</span>,</span><br><span class="line">    ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>如果您不需要我们的组件的解决方案，您也可以将其删除。</p>
+
+    
+    <div class="page-links">
+        
+        <span><a href="style.html">&lang; 上一页：自定义样式</a></span>
+        
+        
+        <span style="float:right"><a href="components.html">下一页：UI 组件 &rang;</a></span>
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2017
+    <a href="http://www.admui.com/">Admui</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+    
+</div>
+
+
+<script src="https://cdn.staticfile.org/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+<script src="http://cdn.admui.com/docs/common/js/common.js"></script>
+
+<script src="https://cdn.staticfile.org/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+    }, false);
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+</body>
+</html>

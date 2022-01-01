@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>Admui-basic v2.0.0 更新日志 - Admui 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架">
+    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <meta name="msapplication-TileImage" content="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <meta name="msapplication-TileColor" content="#395b81">
+    <link rel="apple-touch-icon-precomposed" href="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <link rel="shortcut icon" href="http://cdn.admui.com/site/img/app/favicon.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = ""
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="http://cdn.admui.com/docs/v2/css/page.css">
+</head>
+<body>
+<div id="mobile-bar">
+    <a class="menu-button"></a>
+    <a class="logo" href="../../index.html">Admui开发文档</a>
+    <select class="version-select">
+        <option value="basic" selected>基础版</option>
+        <option value="pjax">pjax版</option>
+        <option value="iframe">iframe版</option>
+    </select>
+</div>
+<div id="header">
+    <a id="logo" href="../../index.html">
+        <img src="http://cdn.admui.com/docs/common/images/logo.svg"> <span>Admui 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic" selected>基础版</option>
+        <option value="pjax">pjax版</option>
+        <option value="iframe">iframe版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="../../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../index.html" class="nav-link current">更新日志</a>
+</li>
+<li>
+    <a href="../../1.x/index.html" class="nav-link">v1版本</a>
+</li>
+
+    </ul>
+</div>
+
+<div id="main" class="fix-sidebar">
+    
+    <div class="sidebar log">
+    <ul class="main-menu">
+        <li>
+    <a href="../../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="../../java/index.html" class="nav-link">JAVA</a>
+</li>
+<li>
+    <a href="../index.html" class="nav-link current">更新日志</a>
+</li>
+<li>
+    <a href="../../1.x/index.html" class="nav-link">v1版本</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul style="padding:0">
+            
+            <li>
+                <a href="../v2.1.0/index.html" class="sidebar-link">Admui-basic v2.1.0 更新日志</a>
+            </li>
+            
+            <li>
+                <a href="index.html" class="sidebar-link current">Admui-basic v2.0.0 更新日志</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="content log post">
+    <h1>Admui-basic v2.0.0 更新日志</h1>
+    <h4>2018/10/28</h4>
+    <p>Admui-basic v2.0.0 是 Admui 产品的一次重大升级，UI 界面采用更为现代的设计，Admui 所采用的 <code>Bootstrap</code> 版本由 v3 升级到 v4，CSS 预处理器也由 <code>LESS</code> 改为更为友好强大的 <code>SASS</code>。v2 的所有页面均在 v1.x 版本的基础上进行了重构，同时 v2 版本的 Java 版采用更为主流的 <code>SpringBoot + MyBatis + Thymeleaf</code> 进行重写，在功能上增加了“组织机构”，“权限管理”，“角色管理”等模块，数据库依然采用 <code>MySQL</code>。在 v2 版本中，我们还新增了一套 Topbar 布局，您可以通过线上的演示查看该布局。</p>
+<blockquote>
+<p><strong>注意：</strong> 由于 <code>Bootstrap</code> v4 版本并不向下兼容等因素，Admui-basic v2.0.0 和 v1.x 版本不兼容，如果您正在使用 Admui v1.x，在升级到 v2.0.0 之前请务必知晓这些差异。同时在 2019年7月31日 之前，我们仍然会对 v1.x 版本的产品继续提供支持，包括版本升级，Bug 修复和售后支持等。</p>
+</blockquote>
+<p>如果您之前已经购买过 Admui 产品，可以在 <a href="http://www.admui.com/user" target="_blank" rel="noopener">用户中心</a> 升级到 v2.0.0，如果您想购买 Admui 产品，请点击 <a href="http://www.admui.com/buy" target="_blank" rel="noopener">购买</a>。</p>
+<a id="more"></a>
+<p>Admui 通用管理系统快速开发框架是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象。您可以 Admui 为基础，快速开发各种MIS系统，如CMS、OA、CRM、ERP、POS等。Admui 紧贴业务特性，涵盖了大量的常用组件和基础功能，最大程度上帮助企业节省时间成本和费用开支。</p>
+<p>Admui-basic v2.0.0 版包含了包含了 v1.x 的所有 UI 示例和基础的管理系统功能，同时在 Java 版本中提供了更为完善的用户管理功能，同时修复了大量的 Bug，增加了部分示例。</p>
+<h3 id="UI-示例"><a href="#UI-%E7%A4%BA%E4%BE%8B" class="headerlink" title="UI 示例"></a>UI 示例</h3><ul>
+<li>UI 组件(布局、基本、进阶、组件、小工具)</li>
+<li>页面示例(首页示例、常用页面、团队协作)</li>
+<li>表格(基本表格、树形表格、DataTables、Bootstrap-Table)</li>
+<li>表单(基本、质感、高级、布局、向导、验证、预设、编辑、编辑器、图片裁剪、文件上传)</li>
+<li>图表(简单图表、ECharts)</li>
+<li>系统(菜单管理、组织机构、角色管理、权限管理、日志信息、黑名单、系统设置、账户信息)</li>
+</ul>
+<p>共六大模块，涵盖1000+ 基础组件，200+ UI示例页面，50+ 完整示例页面。</p>
+<h3 id="基础功能"><a href="#%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD" class="headerlink" title="基础功能"></a>基础功能</h3><ul>
+<li>登录</li>
+<li>菜单管理</li>
+<li>组织机构</li>
+<li>角色管理</li>
+<li>权限管理</li>
+<li>日志信息</li>
+<li>黑名单</li>
+<li>系统设置(显示设置、日志设置)</li>
+<li>账户信息(消息、日志、密码、显示)</li>
+<li>消息中心</li>
+<li>错误页面(维护中、无权限、404等)</li>
+<li>网站地图</li>
+</ul>
+<p>详细功能介绍见 <a href="../../java/index.html">Java 文档</a>。</p>
+<h3 id="Admui-v2-0-部分界面截图"><a href="#Admui-v2-0-%E9%83%A8%E5%88%86%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE" class="headerlink" title="Admui v2.0 部分界面截图"></a>Admui v2.0 部分界面截图</h3><p><img src="http://cdn.admui.com/docs/v2/screenshot/login.png" alt="Admui 登录"><br><img src="http://cdn.admui.com/docs/v2/screenshot/table.png" alt="Admui 表格"><br><img src="http://cdn.admui.com/docs/v2/screenshot/chart.png" alt="Admui 图表"><br><img src="http://cdn.admui.com/docs/v2/screenshot/mailbox.png" alt="Admui 邮箱"><br><img src="http://cdn.admui.com/docs/v2/screenshot/layout.png" alt="Admui 布局"><br><img src="http://cdn.admui.com/docs/v2/screenshot/contab.png" alt="Admui 页签"><br><img src="http://cdn.admui.com/docs/v2/screenshot/theme.png" alt="Admui 主题"></p>
+<h3 id="在线体验"><a href="#%E5%9C%A8%E7%BA%BF%E4%BD%93%E9%AA%8C" class="headerlink" title="在线体验"></a>在线体验</h3><p><a href="http://www.admui.com/demo" target="_blank" rel="noopener">http://www.admui.com/demo</a></p>
+
+</div>
+<div class="footer">
+    &copy; 2015-2018
+    <a href="http://www.admui.com/">Admui</a>
+    ·
+    上海畅控
+</div>
+
+    
+</div>
+
+
+<script src="https://cdn.staticfile.org/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+<script src="http://cdn.admui.com/docs/common/js/common.js"></script>
+
+<script src="https://cdn.staticfile.org/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+    }, false);
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        功能介绍 - Admui 开发文档</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="admui,admui官网,admui框架,通用后台管理系统,后台框架,ui框架">
+    <meta name="description" content="Admui 是一个基于最新 Web 技术的企业级通用管理系统快速开发框架，可以帮助企业极大的提高工作效率，节省开发成本，提升品牌形象">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'" />
+    <![endif]-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <meta name="msapplication-TileImage" content="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <meta name="msapplication-TileColor" content="#395b81">
+    <link rel="apple-touch-icon-precomposed" href="http://cdn.admui.com/site/img/app/icon-72@x2.png">
+    <link rel="shortcut icon" href="http://cdn.admui.com/site/img/app/favicon.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <script>
+        window.PAGE_TYPE = "java"
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cd758c4c82a4964836712308cb782b12";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="http://cdn.admui.com/docs/v2/css/page.css">
+</head>
+
+<body>
+    <div id="mobile-bar">
+        <a class="menu-button"></a>
+        <a class="logo" href="../index.html">Admui开发文档</a>
+        <select class="version-select">
+            <option value="basic">基础版</option>
+            <option value="pjax" selected>pjax版</option>
+            <option value="iframe">iframe版</option>
+        </select>
+    </div>
+    <div id="header">
+    <a id="logo" href="../index.html">
+        <img src="http://cdn.admui.com/docs/images/logo.svg"> <span>Admui 开发文档</span>
+    </a>
+    <select class="version-select">
+        <option value="basic">基础版</option>
+        <option value="pjax" selected>pjax版</option>
+        <option value="iframe">iframe版</option>
+    </select>
+    <ul id="nav">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+<li>
+    <a href="../1.x/index.html" class="nav-link">v1版本</a>
+</li>
+
+    </ul>
+</div>
+    
+    <div id="main" class="fix-sidebar">
+        
+        
+<div class="sidebar">
+    <ul class="main-menu">
+        <li>
+    <a href="../index.html" class="nav-link">首页</a>
+</li>
+<li>
+    <a href="../guide/index.html" class="nav-link">介绍</a>
+</li>
+<li>
+    <a href="../ui/index.html" class="nav-link">UI</a>
+</li>
+<li>
+    <a href="index.html" class="nav-link current">JAVA</a>
+</li>
+<li>
+    <a href="../logs/index.html" class="nav-link">更新日志</a>
+</li>
+<li>
+    <a href="../1.x/index.html" class="nav-link">v1版本</a>
+</li>
+
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+            <li>
+                <a href="../../basic/java/index.html" class="sidebar-link ">概述</a>
+            </li>
+            
+            <li>
+                <a href="../../basic/java/local.html" class="sidebar-link ">本地部署</a>
+            </li>
+            
+            <li>
+                <a href="../../basic/java/function.html" class="sidebar-link current ">功能介绍</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content java with-sidebar">
+    <h1>功能介绍</h1>
+    <p>Admui 提供了管理系统常用的基础功能，我们将在此章节为您进行介绍，同时某些功能也会提及所用到的技术。</p>
+<h2 id="登录"><a href="#%E7%99%BB%E5%BD%95" class="headerlink" title="登录"></a>登录</h2><p>实现了管理系统的登录功能以及自动登录功能</p>
+<h2 id="菜单管理"><a href="#%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86" class="headerlink" title="菜单管理"></a>菜单管理</h2><p>定义顶部及左侧功能菜单。顶部菜单为第一级菜单，Admui 最多支持五级菜单。支持菜单图标自定义选择、名称及菜单链接输入、拖动排序以及权限分配。</p>
+<h2 id="机构管理"><a href="#%E6%9C%BA%E6%9E%84%E7%AE%A1%E7%90%86" class="headerlink" title="机构管理"></a>机构管理</h2><p>对公司的组织架构进行管理，可以增加部门，修改部门名称，删除部门。该模板同时集成了用户管理功能，支持用户机构多对多结构，用户管理下可以进行用户的新增，修改，删除，按部门和按角色进行角色分配，启用禁用等功能。</p>
+<h2 id="角色管理"><a href="#%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86" class="headerlink" title="角色管理"></a>角色管理</h2><p>角色管理包括角色组，角色权限分配，用户分配等功能，可以进行新增，修改，删除角色组功能，角色组下可以新建，编辑，删除角色，该处角色组只起一个角色分组的作用，对系统暂无任何限制作用，新建和编辑角色的同时可以进行权限的分配操作。点击右上角添加成员，可以创建角色用户关系，点击移除成员，可以解除角色用户关系，分配用户采用组织和角色两个维度进行过滤选择。</p>
+<h2 id="权限管理"><a href="#%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86" class="headerlink" title="权限管理"></a>权限管理</h2><p>本系统采用的 RBAC 架构进行的权限控制设计，权限管理可以新建，编辑，删除权限，同时可以对权限进行分配菜单和操作按钮的分配，页面具体的操作需要开发人员到数据库<code>sys_operation</code>表进行添加关联到菜单。</p>
+<h2 id="日志配置"><a href="#%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE" class="headerlink" title="日志配置"></a>日志配置</h2><p>可以通过设置接口地址，对该接口进行日志记录，记录的日志可以到日志管理下查看。</p>
+<h2 id="日志管理"><a href="#%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86" class="headerlink" title="日志管理"></a>日志管理</h2><p>查询系统操作日志，该日志通过日志配置的接口地址进行拦截写入。</p>
+<h2 id="黑名单管理"><a href="#%E9%BB%91%E5%90%8D%E5%8D%95%E7%AE%A1%E7%90%86" class="headerlink" title="黑名单管理"></a>黑名单管理</h2><p>将某 IP 地址加入到黑名单，被加入黑名单的IP将无权限访问系统。<br>本模块用到了<code>Spring AOP</code>，通过面向切面编程记录用户操作日志。</p>
+<h2 id="显示设置"><a href="#%E6%98%BE%E7%A4%BA%E8%AE%BE%E7%BD%AE" class="headerlink" title="显示设置"></a>显示设置</h2><p>配置菜单主题、导航条颜色、菜单显示位置等系统显示相关属性。此处显示设置为全局设置，即系统管理员设置后，所有用户均以此设置为默认显示设置。 </p>
+<h2 id="账户信息"><a href="#%E8%B4%A6%E6%88%B7%E4%BF%A1%E6%81%AF" class="headerlink" title="账户信息"></a>账户信息</h2><h3 id="消息"><a href="#%E6%B6%88%E6%81%AF" class="headerlink" title="消息"></a>消息</h3><p>查看当前登录用户收到的消息，可标记为已读、删除。<br>此处消息推送，使用的是<code>Spring WebSocket</code>，客户端可以实时接收到服务端推送过来的消息。</p>
+<h3 id="日志"><a href="#%E6%97%A5%E5%BF%97" class="headerlink" title="日志"></a>日志</h3><p>查看当前登录用户产生的所有操作日志。</p>
+<h3 id="密码"><a href="#%E5%AF%86%E7%A0%81" class="headerlink" title="密码"></a>密码</h3><p>修改当前登录用户的密码。</p>
+<h3 id="显示"><a href="#%E6%98%BE%E7%A4%BA" class="headerlink" title="显示"></a>显示</h3><p>个性化定义当前登录用户的显示设置；此处显示设置为用户级别设置，即如果用户在此处自定义了显示设置，那么就会覆盖全局的显示设置。</p>
+<h2 id="错误页面"><a href="#%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2" class="headerlink" title="错误页面"></a>错误页面</h2><p>包含了维护中、无权限、404、500等常用错误页面。</p>
+<h2 id="网站地图"><a href="#%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE" class="headerlink" title="网站地图"></a>网站地图</h2><p>通过网站地图快速查看系统中的每一个页面。</p>
+
+    
+    <div class="page-links">
+        
+        <span><a href="local.html">&lang; 上一页：本地部署</a></span>
+        
+        
+    </div>
+    
+    <div class="footer">
+    &copy; 2015-2018
+    <a href="http://www.admui.com/">Admui</a>
+    ·
+    上海畅控
+</div>
+</div>
+
+        
+    </div>
+    
+
+    <script src="https://cdn.staticfile.org/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+    <script src="http://cdn.admui.com/docs/common/js/common.js"></script>
+
+    <script src="https://cdn.staticfile.org/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+        }, false);
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+</body>
+
+</html>
